@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator - EECU</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <header>
+    <header>
         <div class="logo">
             <img src="sources/image.png" alt="EECU Logo" />
         </div>
-      <nav>
-        <ul>
-          <a>Savings & Checking</a>
-          <a>Loans & Credit Cards</a>
-          <a>Online & Mobile</a>
-          <a>Insure & Invest</a>
-          <a>News & Resources</a>
-          <a>Money 101</a>
-        </ul>
-        <button class="Login">Login</button>
-      </nav>
-         <h1>Budget Calculator</h1>
+        <nav>
+            <ul>
+                <a>Savings & Checking</a>
+                <a>Loans & Credit Cards</a>
+                <a>Online & Mobile</a>
+                <a>Insure & Invest</a>
+                <a>News & Resources</a>
+                <a>Money 101</a>
+            </ul>
+        </nav>
     </header>
-    
+
+    <div id="title">Monthly Budget Calculator</div>
 
 
+
+<div id = "container">
     <h2>Part 1 - Career Salary</h2>
     <ul class="Lists" id="CareerList">
-        <li class="listItem">Select Career <img src="sources/betterinfo.png" class="Info"><select id="careerChoices"></select></li>
+        <li class="listItem">Select Career <img src="sources/betterinfo.png" class="Info"><select
+                id="careerChoices"></select></li>
         <li class="listItem" id="monthlyIncome">Monthly Income <img src="sources/betterinfo.png" class="Info"></li>
         <li class="listItem">Total Monthly Income</li>
     </ul>
@@ -56,48 +60,52 @@
             <small class="taxInfo">Deduction: 4%</small>
             <p class="calculation">$<input id="expenseInput4"></p>
         </li>
-        <li class="listItem">Total Income(After Tax)</li>                       
-        <p class="calculation"><p id="outcome"></p>
+        <li class="listItem">Total Income(After Tax)</li>
+        <p class="calculation">
+        <p id="outcome"></p>
     </ul>
-    <!-- When you do JavaScipt, add something that shows the amount of money calculated (near the $)--> 
+    <!-- When you do JavaScipt, add something that shows the amount of money calculated (near the $)-->
 
 
 
     <h2>Part 2 - Expenses</h2>
     <ul class="Lists" id="expensesList">
-    <li>Student Loans <img src="sources/Info.png">$ <input type="text" id="Loans"></li>
-    <li>Housing Expenses <img src="sources/Info.png"> $<input type="text" id="Housing"></li>
-    <li>Essentials<img src="sources/Info.png">$<input type="text" id="Essentials"></li>
-    <li>Lifestyle<img src="sources/Info.png">$</li>
-    <li>Future-Proofing <img src="sources/Info.png">$</li>
-    <li>Total Monthly Expenses <p id="MonthlyExpense">$</p></li>
+        <li>Student Loans <img src="sources/betterinfo.png">
+        <li>Housing Expenses <img src="sources/betterinfo.png">
+        <li>Essentials<img src="sources/betterinfo.png">
+        <li>Lifestyle<img src="sources/betterinfo.png">
+        <li>Future-Proofing <img src="sbetter">
+        <li>Total Monthly Expenses <p id="MonthlyExpense">
     </ul>
-
+</div>
     <!-- buttons -->
+<div id="buttons">
     <button id="Results">Show Results</button>
     <button id="Reset">Reset</button>
+</div>
 
     <footer>
         <nav>
-           <ul>
-            <li><a href="">Footer Link 1</a></li>
-            <li><a href="">Footer Link 2</a></li>
-            <li><a href="">Footer Link 3</a></li>
-            <li><a href="">Footer Link 4</a></li>
-           </ul>
+            <ul>
+                <li><a href="">Footer Link 1</a></li>
+                <li><a href="">Footer Link 2</a></li>
+                <li><a href="">Footer Link 3</a></li>
+                <li><a href="">Footer Link 4</a></li>
+            </ul>
         </nav>
         <div class="logo">
             <img src="sources/image.png" alt="EECU Logo" />
         </div>
         <nav>
-           <ul>
-            <li><a href="">Footer Link 1</a></li>
-            <li><a href="">Footer Link 2</a></li>
-            <li><a href="">Footer Link 3</a></li>
-           </ul>
+            <ul>
+                <li><a href="">Footer Link 1</a></li>
+                <li><a href="">Footer Link 2</a></li>
+                <li><a href="">Footer Link 3</a></li>
+            </ul>
         </nav>
     </footer>
     <!-- might not be necessary to have a footer. feel free to change the p's to a's or anything otherwise -->
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
