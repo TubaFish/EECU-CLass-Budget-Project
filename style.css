@@ -15,10 +15,14 @@ body {
     margin-left: 0;
 }
 
+.listItem {
+  display:flex;
+  align-items: center;
+  background-color:white;
+}
 
 img {
     width: 20px;
-    height: px;
 
 }
 .Info {
@@ -51,7 +55,7 @@ header {
   background-color: var(--brand-color);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 1rem;
 } 
 
@@ -84,7 +88,6 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
-    /* height: 5rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,6 +101,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: flex-start;
   }
 
   footer nav a {
@@ -110,6 +114,7 @@ footer {
   footer nav a:hover {
     color: var(--brand-color-light);
   }
+
   #loans {
     display: flex;
     flex-direction: column;
@@ -134,7 +139,8 @@ footer {
     font-size: 35px;
   }
   #container {
-    padding-left:2% ;
+    padding-left: 2%;
+
 
   }
   h2 {
@@ -159,4 +165,10 @@ footer {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+  li img {
+    width: 20px;
+    height: 20px;
+    display: flex;
   }
