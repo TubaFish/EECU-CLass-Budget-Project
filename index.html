@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator - EECU</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=help" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,14 +33,13 @@
 <div id = "container">
     <h2>Part 1 - Career Salary</h2>
     <ul class="Lists" id="CareerList">
-        <li class="listItem">Select Career <img src="sources/betterinfo.png" class="Info"><select
+        <li class="listItem">Select Career <span class="material-symbols-outlined">help</span><select
                 id="careerChoices"></select><img class="iFoundYouFaker" src='sources/dropdownWhite.png'></li>
-        <li class="listItem">Total Monthly Income<input type="text" class="gross" placeholder="$"></li>
+        <li class="listItem">Gross Monthly Income<input type="text" id="Mross" class="gross" placeholder="$"></li>
     </ul>
 
 
     </select>
-
     <h2>Automatic Deduction</h2>
     <ul class="Lists" id="autoDeduction">
         <li class="listItem">
