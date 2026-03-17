@@ -95,6 +95,22 @@ nav a:hover {
   background-color:#F0F4F8;
 }
 
+.expenseLabel {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+}
+
+.expenseInput {
+  border: none;
+  align-self: center;
+  width: 6vw;
+  height: 3.5vh;
+  margin-right: 7px;
+  background-color:#F0F4F8;
+}
+
 
 .linkR {
   text-align: end;
@@ -215,8 +231,8 @@ li {
 
 #chartDiv {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+
 }
 
 #myChart {
