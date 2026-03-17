@@ -92,4 +92,3 @@ function calcTax(grossIncome) {
 
 }
 
-
