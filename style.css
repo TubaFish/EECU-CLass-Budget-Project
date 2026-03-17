@@ -213,3 +213,13 @@ li {
   color: var(--helpIcon);
 }
 
+#chartDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myChart {
+  max-width: 40vw;
+  max-height: 40vh;
+}

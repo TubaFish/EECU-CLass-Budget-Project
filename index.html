@@ -71,9 +71,9 @@
                     <span class="material-symbols-outlined">help</span>
                     <span class="material-symbols-outlined arrow">keyboard_arrow_down</span>
             <div class="content">
-                <p>Tuition and Fees <input class="expenseInput" type="text"></p>
-                <p>Books and Supplies <input class="expenseInput" type="text"></p>
-                <p>Room and Board <input class="expenseInput" type="text"></p>
+                <p>Tuition and Fees <input class="expenseInput" id="studentloanInput" type="number"></p>
+                <p>Books and Supplies <input class="expenseInput" id="studentloanInput" type="number"></p>
+                <p>Room and Board <input class="expenseInput" id="studentloanInput" type="number"></p>
             </div>
         </li>
         <li class="dropList">
@@ -81,11 +81,11 @@
                 <span class="material-symbols-outlined">help</span>
                 <span class="material-symbols-outlined arrow">keyboard_arrow_down</span>
             <div class="content">
-                <p>Mortgage/Rent<input class="expenseInput" type="text"></p>
-                <p>Insurance<input class="expenseInput" type="text"></p>
-                <p>Gas & Electricity<input class="expenseInput" type="text"></p>
-                <p>Water & Sewage<input class="expenseInput" type="text"></p>
-                <p>Home Repairs<input class="expenseInput" type="text"></p>
+                <p>Mortgage/Rent<input class="expenseInput" id="housingInput" type="number"></p>
+                <p>Insurance<input class="expenseInput" id="housingInput" type="number"></p>
+                <p>Gas & Electricity<input class="expenseInput" id="housingInput" type="number"></p>
+                <p>Water & Sewage<input class="expenseInput" id="housingInput" type="number"></p>
+                <p>Home Repairs<input class="expenseInput" id="housingInput" type="number"></p>
             </div>
         </li>
         <li class="dropList">
@@ -94,10 +94,10 @@
                 <span class="material-symbols-outlined">help</span>
                 <span class="material-symbols-outlined arrow">keyboard_arrow_down</span>
             <div class="content">
-                <p>Medical Inusrance<input class="expenseInput" type="text"></p>
-                <p>Dental Insurance<input class="expenseInput" type="text"></p>
-                <p>Groceries<input class="expenseInput" type="text"></p>
-                <p>Transporation<input class="expenseInput" type="text"></p>
+                <p>Medical Inusrance<input class="expenseInput" id="essentialsInput" type="number"></p>
+                <p>Dental Insurance<input class="expenseInput" id="essentialsInput" type="number"></p>
+                <p>Groceries<input class="expenseInput" id="essentialsInput" type="number"></p>
+                <p>Transporation<input class="expenseInput" id="essentialsInput" type="number"></p>
             </div>
         </li>
         <li class="dropList">
@@ -105,10 +105,10 @@
                 <span class="material-symbols-outlined">help</span>
                 <span class="material-symbols-outlined arrow">keyboard_arrow_down</span>
             <div class="content">
-                <p>Gym<input class="expenseInput" type="text"></p>
-                <p>Streaming Services<input class="expenseInput" type="text"></p>
-                <p>Dining out<input class="expenseInput" type="text"></p>
-                <p>Other Subscriptions<input class="expenseInput" type="text"></p>
+                <p>Gym<input class="expenseInput" id="lifestyleInput" type="number"></p>
+                <p>Streaming Services<input class="expenseInput" id="lifestyleInput" type="number"></p>
+                <p>Dining out<input class="expenseInput" id="lifestyleInput" type="number"></p>
+                <p>Other Subscriptions<input class="expenseInput" id="lifestyleInput" type="number"></p>
             </div>
         </li>
         <li class="dropList">
@@ -116,9 +116,9 @@
                 <span class="material-symbols-outlined">help</span>
                 <span class="material-symbols-outlined arrow">keyboard_arrow_down</span>
             <div class="content">
-                <p>Savings<input class="expenseInput" type="text"></p>
-                <p>Retirement<input class="expenseInput" type="text"></p>
-                <p>Emergency Fund<input class="expenseInput" type="text"></p>
+                <p>Savings<input class="expenseInput" id="futureproofingInput" type="number"></p>
+                <p>Retirement<input class="expenseInput" id="futureproofingInput" type="number"></p>
+                <p>Emergency Fund<input class="expenseInput" id="futureproofingInput" type="number"></p>
             </div>
         </li>
         <li class="dlistTotal">Total Monthly Expenses <input class="expenseTotal" placeholder="$"></li>
@@ -130,6 +130,10 @@
     <button id="Reset">Reset</button>
 </div>
 
+<div id="chartDiv">
+    <canvas id="myChart"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 
     <!--Bottom-->
