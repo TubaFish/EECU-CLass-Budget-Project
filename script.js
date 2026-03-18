@@ -74,11 +74,50 @@ for (let input of expenseInputs) {
 }
 
 
+/*create monthly budget from annual salary pulled from api fetch */
+
+// All taxes
+function calcTax(grossIncome) {
+
+    // Taxes
+    let standDeduc = 16100;
+    const medTax = (grossIncome * 0.0145) / 12;
+    const socialTax = (grossIncome * 0.062) / 12;
+    const stateTax = (grossIncome * 0.04) / 12;
+
+    // Input
+    const medElm = document.getElementById("medDeduc")
+    const socialElm = document.getElementById("socialDeduc")
+    const fedElm = document.getElementById("fedDeduc")
+    const stateElm = document.getElementById("stateDeduc")
+ 
+
+    medElm.value = medTax.toFixed(2)
+    socialElm.value = socialTax.toFixed(2)
+    stateElm.value = stateTax.toFixed(2)
+    
+    
+    // find taxable ammount
+    let taxedInc = Math.max(0, grossIncome - standDeduc);
+    let fedTax = 0
+        if (taxedInc <= 12400) {
+            fedTax = taxedInc * 0.10;
+        } else if(taxedInc <= 50400) {
+            fedTax = (12400 * 0.10) + (taxedInc - 12400) * 0.12;
+        } else {
+            fedTax = (12400 * 0.10) + (38000 * 0.12) + (taxedInc -  50400) * 0.22;
+        }
+        
+
+    fedElm.value = (fedTax / 12).toFixed(2) 
+    
+    const totAf = document.getElementById("totAf");
+    const totTax = medTax + socialTax + stateTax + (fedTax / 12);
+    const aftaxInc = grossMonthIncome - totTax;
+    totAf.value = aftaxInc.toFixed(2);
 
 
-
-
-
+}
 
 
 
